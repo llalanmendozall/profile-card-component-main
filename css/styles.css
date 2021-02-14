@@ -1,0 +1,118 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: hsl(185, 75%, 39%);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(0, 0%, 59%);
+}
+p,h5{
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+    font-size: 1rem;
+}
+.bg-pattern{
+z-index: 1;
+width: 100vw;
+height: 100vh;
+position: fixed;
+background-repeat: no-repeat;
+}
+#bg-pattern-top{
+    background-image: url("../images/bg-pattern-top.svg");
+    background-position: -90% 175%;
+}
+#bg-pattern-bottom{
+    background-image: url("../images/bg-pattern-bottom.svg");
+    background-position: 180% -105%;
+}
+@media (max-width: 650px) {
+    #bg-pattern-top {
+      background-position: 125% 230%;
+    }
+  
+    #bg-pattern-bottom {
+      background-position: -15% -150%;
+    }
+  }
+
+h5{
+    color: hsl(229, 23%, 23%);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+.wrapper{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container
+{
+    z-index: 999;
+    position: fixed;
+    height: auto;
+    width: 360px;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0px 20px 30px 20px rgba(0, 0, 0, 0.1);
+}
+.card{
+    width: 100%;
+    
+}
+.card-image-top{
+    border-radius: 1rem 1rem 0 0;
+    background-image: url("../images/bg-pattern-card.svg");
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+.card-body
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+.image-avatar{
+    margin-top: -48px;
+    margin-bottom: 1rem;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    
+}
+.card-text{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: hsl(227, 10%, 46%);
+}
+.card-body span{
+    margin-left: 3px;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400; 
+}
+.card-footer{
+    
+    border-top: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: space-evenly; 
+    padding: 1rem 0;
+}
+.list{
+    text-align: center;
+}
+.list > p{
+    font-size: 0.70rem;
+    margin-top: 5px;
+}
